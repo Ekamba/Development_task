@@ -1,0 +1,65 @@
+@use '../../scss/config' as *;
+
+.navbar__container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 6rem;
+  background-color: $color-black;
+  z-index: 1;
+  padding: 0.5rem 2rem;
+  width: scale-down;
+  .logo {
+    font-size: 2rem;
+    font-weight: 900;
+    color: $color-red;
+    text-decoration: none;
+  }
+  .navbar__items {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 4rem;
+    align-items: center;
+    .navbar__item {
+      list-style: none;
+      color: $color-white;
+      font-weight: 700;
+      cursor: pointer;
+      &:hover {
+        color: $color-grey;
+      }
+    }
+  }
+  svg.h-6.w-6 {
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: $color-black;
+    background-color: $color-white;
+  }
+  .cart__length__box {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.8rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: $color-black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cart__length {
+      color: $color-white;
+      margin-bottom: 0;
+      font-size: 1rem;
+    }
+  }
+}
+@media (min-width: 270px) and (min-width: 991px) {
+  .nav__container {
+    width: 100%;
+  }
+}

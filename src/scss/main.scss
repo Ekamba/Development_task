@@ -1,0 +1,35 @@
+@use './config' as *;
+
+body {
+  background-color: $color-white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+.app__button {
+  border: none;
+  padding: 0.8rem;
+  background-color: $color-black;
+  min-width: 9rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center !important;
+  color: $color-white;
+  border-radius: 2rem;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  cursor: pointer;
+  &:hover,
+  &:focus,
+  &:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}

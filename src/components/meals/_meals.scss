@@ -1,0 +1,46 @@
+@use '../../scss/config' as *;
+
+.meals__container {
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+
+  .cart__menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    .menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      background-color: $color-grey;
+      padding: 1rem;
+      border-radius: 0.2rem;
+      .menu__image {
+        max-width: fit-content;
+      }
+      .menu__title {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+      }
+      .menu__price {
+        color: $color-yellow;
+        font-size: 1rem;
+        font-weight: 900;
+      }
+      .menu__description {
+        flex-wrap: wrap;
+      }
+      .add__menu {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 270px) and (max-width: 991px) {
+  .cart__menu {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem;
+  }
+}

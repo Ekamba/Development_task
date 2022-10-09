@@ -82,7 +82,7 @@
 .home__container .table__number__form {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
   padding: 4rem;
   border-radius: 1rem;
   box-shadow: 2px 2px 0px 0px #ccc;
@@ -90,8 +90,14 @@
 .home__container .table__number__form .css-1s2u09g-control {
   border-radius: 5rem;
 }
+.home__container .table__number__form .options {
+  width: 40rem;
+}
 .home__container .table__number__form .css-1pahdxg-control {
   border-radius: 5rem;
+}
+.home__container .table__number__form .wrong__table {
+  color: #f00;
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 .meals__container {

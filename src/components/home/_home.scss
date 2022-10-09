@@ -17,15 +17,21 @@
   .table__number__form {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
     padding: 4rem;
     border-radius: 1rem;
     box-shadow: 2px 2px 0px 0px $color-grey;
     .css-1s2u09g-control {
       border-radius: 5rem;
     }
+    .options {
+      width: 40rem;
+    }
     .css-1pahdxg-control {
       border-radius: 5rem;
+    }
+    .wrong__table {
+      color: $color-red;
     }
   }
 }

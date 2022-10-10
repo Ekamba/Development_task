@@ -1,11 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import menusReducer, { getMenus } from '../features/menu/menuSlice';
+// import menusReducer, { getMenus } from '../features/menu/menuSlice';
 import cartReducer, { getTotals } from '../features/cart/cartSlice';
 import { menusApi } from '../features/menu/menuServices';
 
 export const store = configureStore({
   reducer: {
-    menus: menusReducer,
+    // menus: menusReducer,
     cart: cartReducer,
     [menusApi.reducerPath]: menusApi.reducer,
   },
@@ -13,5 +13,5 @@ export const store = configureStore({
     getDefaultMiddleware().concat(menusApi.middleware),
 });
 
-store.dispatch(getMenus());
+// store.dispatch(getMenus());
 store.dispatch(getTotals());

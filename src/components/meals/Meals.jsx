@@ -1,16 +1,12 @@
 import React from 'react';
 import './_meals.scss';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addToCart } from '../../features/cart/cartSlice';
 import { useGetMenusQuery } from '../../features/menu/menuServices';
 import { useNavigate } from 'react-router-dom';
 
 const Meals = () => {
-  const { isLoading } = useSelector((state) => ({
-    ...state.menus,
-  }));
-
-  const { data } = useGetMenusQuery();
+  const { data, isLoading } = useGetMenusQuery();
   const dispatch = useDispatch();
   const navigate = useNavigate();
 

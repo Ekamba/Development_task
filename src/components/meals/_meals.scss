@@ -4,6 +4,11 @@
   padding: 0 2rem;
   margin-bottom: 2rem;
 
+  .spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .cart__menu {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

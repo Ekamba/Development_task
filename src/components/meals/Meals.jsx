@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { addToCart } from '../../features/cart/cartSlice';
 import { useGetMenusQuery } from '../../features/menu/menuServices';
 import { useNavigate } from 'react-router-dom';
+import Spinner from '../spinner/Loader';
 
 const Meals = () => {
   const { data, isLoading } = useGetMenusQuery();
@@ -18,7 +19,9 @@ const Meals = () => {
   return (
     <div className="meals__container">
       {isLoading ? (
-        <p>Loading...</p>
+        <div className="spinner">
+          <Spinner />
+        </div>
       ) : (
         <>
           <h1 className="menu__title">Menu</h1>
